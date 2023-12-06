@@ -130,7 +130,7 @@ body{
 
 .hamburger {
   cursor: pointer;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .hamburger input {
@@ -169,11 +169,14 @@ body{
 }
 
 .menu{
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
 .menu p{
   height: 50px;
+}
+.menu .responsive{
+  display: none;
 }
 
 .hamburger {
@@ -253,7 +256,15 @@ section{
     width: 280px;
     height: 400;
   }
-  .navlist {
+  .navlist{
+    display: none;
+  }
+  .menu .responsive{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .menu .home{
     display: none;
   }
 }
