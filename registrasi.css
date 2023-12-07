@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+  font-family: "Poppins", sans-serif;
+}
 .registrasi{
   height: 100vh;
   justify-content: center;
   align-items: center;
   display: flex;
+  background-image: url(backgroundhome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .form {
     display: flex;
@@ -16,6 +23,8 @@
     background-color: #1a1a1a;
     color: #fff;
     border: 1px solid #333;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
   }
   
   .title {
@@ -26,7 +35,7 @@
     display: flex;
     align-items: center;
     padding-left: 30px;
-    color: #00bfff;
+    color: #71dcc5;
   }
   
   .title::before {
@@ -48,7 +57,7 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: #00bfff;
+    background-color: #71dcc5;
   }
   
   .message, 
@@ -121,7 +130,7 @@
     outline: none;
     padding: 10px;
     border-radius: 10px;
-    color: #fff;
+    color: #71dcc5;
     font-size: 16px;
     transform: .3s ease;
     background-color: #00bfff;
