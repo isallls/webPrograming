@@ -1,7 +1,3 @@
-<?php
-include "root/php/index.php"
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +6,7 @@ include "root/php/index.php"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOKKO</title>
     <link rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="itemshop.css">
+    <link rel="stylesheet" type="text/css" href="movies.css">
 
     <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -49,18 +45,12 @@ include "root/php/index.php"
         <a href="home.php" class="logo">TOKKO</a>
 
         <ul class="navlist">
-            <li><a href="movies.php">HOME</a></li>
+            <li><a href="movies.php" class="active">HOME</a></li>
             <li><a href="home.php">MOVIES</a></li>
-            <li><a href="itemshop.php" class="active">ITEMSHOP</a></li>
+            <li><a href="itemshop.php">ITEMSHOP</a></li>
         </ul>
-        <form action="">
-            <select name="type" id="">
-                <option value="series">Series</option>
-                <option value="movie">Movie</option>
-            </select>
-            <input type="text" name="text" placeholder="Search..." class="input">
-            <button type="submit" name="enter"></button>
-        </form>
+
+        <!-- <input type="text" name="text" placeholder="Search..." class="input"> -->
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
@@ -86,30 +76,6 @@ include "root/php/index.php"
             </div>
         </label>
     </header>
-
-    <body>
-        <section>
-            <?php foreach ($jsonMovies["Search"] as $row) { ?>
-                <?php if ($row["Poster"] != "N/A") {
-                    $gambar = $row["Poster"];
-                } else {
-                    $gambar = "http://placehold.it/300x440";
-                }
-                ?>
-                <div class="container">
-                    <div class="movie">
-                        <img src="<?= $gambar ?>" />
-                        <p>
-                            <?= $row["Title"] ?>
-                        </p>
-                        <button>Click Here</button>
-                    </div>
-
-                <?php } ?>
-
-        </section>
-    </body>
-
     <script src="js/script.js"></script>
 </body>
 

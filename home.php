@@ -22,12 +22,12 @@
     <a href="home.php" class="logo">TOKKO</a>
 
     <ul class="navlist">
-      <li><a href="movies.html">HOME</a></li>
+      <li><a href="movies.php">HOME</a></li>
       <li><a href="home.php" class="active">MOVIES</a></li>
       <li><a href="itemshop.php">ITEMSHOP</a></li>
     </ul>
 
-    <input type="text" name="text" placeholder="Search..." class="input" />
+    <!-- <input type="text" name="text" placeholder="Search..." class="input" /> -->
 
     <div class="bx bx-menu" id="menu-icon"></div>
 
@@ -39,14 +39,14 @@
       </svg>
       <div class="menu">
         <p class="home">
-          <a href="aboutus.html"><b>ABOUT US</b></a>
+          <a href="aboutus.php"><b>ABOUT US</b></a>
         </p>
         <p class="home">
-          <a href="https://www.instagram.com/fsallls/"><b>CONTACT</b></a>
+          <a href="https://github.com/isallls/webPrograming.git"><b>CONTACT</b></a>
         </p>
         <p class="responsive"><a href="home.php">HOME</a></p>
-        <p class="responsive"><a href="movies.html">MOVIES</a></p>
-        <p class="responsive"><a href="itemshop.html">ITEMSHOP</a></p>
+        <p class="responsive"><a href="movies.php">MOVIES</a></p>
+        <p class="responsive"><a href="itemshop.php">ITEMSHOP</a></p>
         <p>
           <button class="Btn">
             <div class="sign">
