@@ -7,6 +7,13 @@
 
 ## SIMPLE Website Film Using OMDb API
 
+## Nama
+
+- Aditya Dharma |
+- Faisal Sidauruk |
+- Dinu Kurniawan Cahyadi|
+- Iqbal Faiz Ramadhan |
+
 ## instalation
 
 1. API Key :
