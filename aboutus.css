@@ -1,13 +1,13 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   list-style: none;
   text-decoration: none;
 }
 
-header{
+header {
   position: fixed;
   right: 0;
   top: 0;
@@ -17,26 +17,26 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 33px 9%;
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
-  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-body{
+body {
   background: url(pxfuel.jpg);
 }
 
-.logo{
+.logo {
   font-size: 30px;
   font-weight: 700;
   color: white;
 }
 
-.navlist{
+.navlist {
   display: flex;
 }
 
-.navlist a{
+.navlist a {
   color: white;
   margin-left: 200px;
   margin-right: 50px;
@@ -45,11 +45,11 @@ body{
   border-bottom: 2px solid transparent;
 }
 
-.navlist a:hover{
+.navlist a:hover {
   border-bottom: 2px solid white;
 }
 
-.navlist a.active{
+.navlist a.active {
   color: #c99756;
 }
 
@@ -64,7 +64,7 @@ body{
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
   background-color: rgb(255, 65, 65);
 }
@@ -72,7 +72,7 @@ body{
 /* plus sign */
 .sign {
   width: 100%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,10 +94,10 @@ body{
   color: white;
   font-size: 1.2em;
   font-weight: 600;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
-.text a{
+.text a {
   color: white;
 }
 
@@ -105,27 +105,27 @@ body{
 .Btn:hover {
   width: 125px;
   border-radius: 40px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .Btn:hover .sign {
   width: 30%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   padding-left: 20px;
 }
 /* hover effect button's text */
 .Btn:hover .text {
   opacity: 1;
   width: 70%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   padding-right: 10px;
 }
 /* button click effect*/
 .Btn:active {
-  transform: translate(2px ,2px);
+  transform: translate(2px, 2px);
 }
 
-.about{
+.about {
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -136,44 +136,44 @@ body{
   gap: 2rem;
 }
 
-section{
+section {
   padding: 0 19%;
 }
 
-.about-text h5{
+.about-text h5 {
   font-size: 14px;
   font-weight: 400;
   color: white;
   margin-bottom: 40px;
 }
 
-.about-text h1{
+.about-text h1 {
   font-size: 90px;
   line-height: 1;
   color: white;
   margin: 0 0 45px;
 }
 
-.about-text h4{
+.about-text h4 {
   font-size: 18px;
   font-weight: 600;
   color: white;
   margin-bottom: 10px;
 }
 
-.about-text p{
+.about-text p {
   color: white;
   font-size: 15px;
   line-height: 1.9;
   margin-bottom: 40px;
 }
 
-.about-img img{
+.about-img img {
   width: 700px;
   height: auto;
 }
 
-.about-text a{
+.about-text a {
   display: inline-block;
   color: white;
   background: #c99756;
@@ -184,22 +184,22 @@ section{
   font-weight: 500;
   border-radius: 30px;
   text-transform: uppercase;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 }
 
-.about-text a:hover{
+.about-text a:hover {
   background: transparent;
   border: 1px solid white;
   transform: translateX(8px);
 }
 
-.about-text a.ctaa{
+.about-text a.ctaa {
   background: transparent;
   border: 1px solid white;
   margin-left: 20px;
 }
 
-.about-text a.ctaa i{
+.about-text a.ctaa i {
   vertical-align: middle;
   margin-left: 5px;
 }
@@ -227,7 +227,7 @@ section{
   stroke-width: 3;
   /* Define the transition for transforming the Stroke */
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-top-bottom {
@@ -243,14 +243,14 @@ section{
   stroke-dashoffset: -32.42;
 }
 
-.menu{
-  border-radius: 20px; 
+.menu {
+  border-radius: 20px;
 }
 
-.menu p{
+.menu p {
   height: 50px;
 }
 
-.menu a.active{
+.menu a.active {
   color: #c99756;
 }
