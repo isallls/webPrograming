@@ -245,12 +245,12 @@ section {
 .movie {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
 }
 
-.movie:hover {
+/* .movie:hover {
   transform: scale(0.9);
-}
+} */
 
 .movie p {
   color: white;
@@ -274,6 +274,10 @@ section {
   height: 444px;
   padding: 0 25px;
 }
+.movie img:hover{
+  transform: scale(.9);
+  transition: transform .3s ease-in-out;
+}
 
 @media screen and (max-width: 876px) {
   .movie img {
@@ -291,5 +295,54 @@ section {
   .menu .home {
     display: none;
   }
+  .footer .right p{
+    font-size: 10px;
+  }.footer .right i{
+    font-size: 20px;
+  }
+  .footer .left-text{
+    font-size: 8px;
+  }
 }
 /* Footer */
+footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 10px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 5rem;
+  margin-top: 25px;
+  background: url(backgroundmovies.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right{
+  display: flex;
+}
+.right i{
+  color: white;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.right p{
+  color: white;
+  padding-top: 20px;
+  font-size: 20px;
+  padding-left: 5px;
+}
+.left{
+  display: flex;
+}
+.left .left-text{
+  padding: 0 15px;
+  color: white;
+  font-style: oblique;
+}

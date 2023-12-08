@@ -40,8 +40,8 @@ if (isset($_GET["enter"])) {
 
         <ul class="navlist">
             <li><a href="movies.php">HOME</a></li>
-            <li><a href="home.php" class="active">MOVIES</a></li>
-            <li><a href="itemshop.php">ITEMSHOP</a></li>
+            <li><a href="home.php">MOVIES</a></li>
+            <li><a href="itemshop.php" class="active">ITEMSHOP</a></li>
         </ul>
         <form action="">
             <input type="text" name="text" placeholder="Search..." class="input" />
@@ -49,7 +49,7 @@ if (isset($_GET["enter"])) {
                 <option value="series">Series</option>
                 <option value="movie">Movie</option>
             </select>
-            <button type="submit" name="enter">nanti button ini ilangin di css bang</button>
+            <button type="submit" name="enter">Click Here</button>
         </form>
 
         <div class="bx bx-menu" id="menu-icon"></div>

@@ -82,7 +82,12 @@ body {
 .navlist a.active {
   color: burlywood;
 }
-
+button{
+  margin-left: 55px;
+}
+button:hover{
+  color: burlywood;
+}
 .Btn {
   display: flex;
   align-items: center;
