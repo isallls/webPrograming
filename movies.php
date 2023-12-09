@@ -37,6 +37,67 @@
             padding: 12px 16px;
             z-index: 1;
         }
+        /* SECTION */
+        section{
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            display: flex;
+
+        }
+        .wrap{
+            width: max-content;
+        }
+        .typing{
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid white;
+            padding-right: 5px;
+            animation: ping 3s steps(100) infinite alternate,
+                    blink 0.7s infinite;
+        }
+        .wrap .typing p{
+            color: white;
+            font-size: 55px;
+            font-style: italic;
+            font-weight: 900;
+            letter-spacing: .7rem;
+        }
+        .wrap .typing span{
+            color: red;
+            font-size: 100px;
+        }
+        @keyframes ping {
+            0% {
+                width: 0%;
+                visibility: hidden;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+            100% {
+
+                border-color: white;
+            }
+        }
+        .wrap P{
+            color: red;
+        }
+        .wrap .ping p{
+            font-size: 18px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .wrap .ping span{
+            color: white;
+            font-size: 50px;
+        }
     </style>
 </head>
 
@@ -76,6 +137,17 @@
             </div>
         </label>
     </header>
+    <!-- SECTION -->
+    <section>
+        <div class="wrap">
+            <div class="typing">
+                <p><span>S</span>elamat <span>D</span>atang...</p>
+            </div>
+            <div class="ping">
+                <p><span>L</span>orem ipsum dolor sit <span>A</span>met consectetur adipisicing elit. <span>E</span>xcepturi esse porro</p>
+            </div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
 </body>
 
