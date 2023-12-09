@@ -109,6 +109,34 @@ if (isset($_GET["enter"])) {
     </section>
 
     <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+        <div class="right">
+            <i class="fa-brands fa-github"></i>
+            <p>&#169; - Made by Mahasiswa Gabut</p>
+        </div>
+        <div class="left">
+            <div class="left-text">
+            <p>Blog</p>
+            <p>About</p>
+            <p>Shop</p>
+            <p>Contact GitHub</p>
+            <p>Pricing</p>
+            </div>
+            <div class="left-text">
+            <P>API</P>
+            <P>Training</P>
+            <P>Status</P>
+            <P>Security</P>
+            </div>
+            <div class="left-text">
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Docs</p>
+            </div>
+        </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
