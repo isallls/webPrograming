@@ -248,7 +248,7 @@ section {
   /* transition: transform 0.3s ease; */
 }
 
-/* .movie:hover {
+/* .movie img:hover {
   transform: scale(0.9);
 } */
 
@@ -274,7 +274,7 @@ section {
   height: 444px;
   padding: 0 25px;
 }
-.movie img:hover{
+img:hover{
   transform: scale(.9);
   transition: transform .3s ease-in-out;
 }

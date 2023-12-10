@@ -247,20 +247,20 @@ section {
   gap: 1rem;
 }
 
-.movie {
+/* .movie {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease;
-}
+} */
+/* transition: transform 0.3s ease; */
 
-.movie:hover {
+/* .movie:hover {
   transform: scale(0.9);
-}
+} */
 
 .movie p {
   color: white;
   font-size: 12px;
-  padding: 0 0;
+  padding: 10px 0 0 0;
   margin: 0 0 0 25px;
   width: 100%;
 }
@@ -278,6 +278,10 @@ section {
   width: 300px;
   height: 444px;
   padding: 0 25px;
+}
+img:hover{
+  transform: scale(.9);
+  transition: .3s ease-in-out;
 }
 
 @media screen and (max-width: 876px) {
