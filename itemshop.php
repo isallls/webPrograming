@@ -23,7 +23,7 @@ if (isset($_GET["enter"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOKKO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="itemshop.css" />
+    <link rel="stylesheet" href="itemshop.css">
 
     <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
@@ -32,6 +32,49 @@ if (isset($_GET["enter"])) {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <style>
+        footer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+        .footer{
+            display: flex;
+            width: 81.5%;
+            padding-right: 10px;
+            padding-top: 10px;
+            margin: 0 10%;
+            padding-bottom: 10px;
+            gap: 5rem;
+            margin-top: 25px;
+            background: url(backgroundmovies.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left: 25px;
+            justify-content: space-between;
+            }
+        .right{
+            display: flex;
+        }
+        .right i{
+            font-size: 30px;
+            color: white;
+            padding-top: 20px;
+        }
+        .right p{
+            font-size: 20px;
+            padding-left: 5px;
+            color: white;
+            padding-top: 20px;
+        }
+        .left{
+            display: flex;
+        }
+        .left .left-text{
+            font-style: oblique;
+            color: white;
+            padding: 0 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -107,7 +150,7 @@ if (isset($_GET["enter"])) {
         </div>
         <!-- end looping movies -->
     </section>
-
+    
     <!-- FOOTER -->
     <footer>
         <div class="footer">
@@ -137,6 +180,7 @@ if (isset($_GET["enter"])) {
         </div>
         </div>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 
