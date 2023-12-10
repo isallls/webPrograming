@@ -33,11 +33,12 @@ if (isset($_GET["enter"])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
     <style>
-        footer{
+        footer {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         }
-        .footer{
+
+        .footer {
             display: flex;
             width: 81.5%;
             padding-right: 10px;
@@ -51,25 +52,30 @@ if (isset($_GET["enter"])) {
             background-size: cover;
             padding-left: 25px;
             justify-content: space-between;
-            }
-        .right{
+        }
+
+        .right {
             display: flex;
         }
-        .right i{
+
+        .right i {
             font-size: 30px;
             color: white;
             padding-top: 20px;
         }
-        .right p{
+
+        .right p {
             font-size: 20px;
             padding-left: 5px;
             color: white;
             padding-top: 20px;
         }
-        .left{
+
+        .left {
             display: flex;
         }
-        .left .left-text{
+
+        .left .left-text {
             font-style: oblique;
             color: white;
             padding: 0 15px;
@@ -129,58 +135,71 @@ if (isset($_GET["enter"])) {
         </label>
     </header>
 
+
     <!-- View -->
     <section>
         <!-- start looping movies -->
         <div class="container">
-            <?php foreach ($jsonMovies["Search"] as $row) { ?>
-                <?php if ($row["Poster"] != "N/A") {
-                    $image = $row["Poster"];
-                } else {
-                    $image = "http://placehold.it/300x440";
-                } ?>
-                <div class="movie">
-                    <img src="<?= $image ?>" alt="" /><!-- width="250px" height="300px" -->
-                    <p>
-                        <?= $row["Title"] ?>
-                    </p>
-                    <button>Click Here</button>
-                </div>
-            <?php    }  ?>
+            <?php if (isset($jsonMovies)) { ?>
+                <?php if ($jsonMovies["Response"] == "True") { ?>
+                    <?php foreach ($jsonMovies["Search"] as $row) { ?>
+                        <?php if ($row["Poster"] != "N/A") {
+                            $image = $row["Poster"];
+                        } else {
+                            $image = "http://placehold.it/300x440";
+                        } ?>
+                        <div class="movie">
+                            <img src="<?= $image ?>" alt="" /><!-- width="250px" height="300px" -->
+                            <p>
+                                <?= $row["Title"] ?>
+                            </p>
+                            <button>Click Here</button>
+                        </div>
+                    <?php    }  ?>
+                <?php  } ?>
+            <?php } ?>
+
         </div>
         <!-- end looping movies -->
+        <!-- condition if movie/series not found -->
+        <script>
+            <?php if (isset($jsonMovies["Response"])) { ?>
+                alert(" <?= $jsonMovies["Error"] ?> ")
+            <?php } ?>
+        </script>
+        <!-- end of condition if movie/series not found -->
     </section>
-    
+
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-        <div class="right">
-            <i class="fa-brands fa-github"></i>
-            <p>&#169; - Made by Mahasiswa Gabut</p>
-        </div>
-        <div class="left">
-            <div class="left-text">
-            <p>Blog</p>
-            <p>About</p>
-            <p>Shop</p>
-            <p>Contact GitHub</p>
-            <p>Pricing</p>
+            <div class="right">
+                <i class="fa-brands fa-github"></i>
+                <p>&#169; - Made by Mahasiswa Gabut</p>
             </div>
-            <div class="left-text">
-            <P>API</P>
-            <P>Training</P>
-            <P>Status</P>
-            <P>Security</P>
+            <div class="left">
+                <div class="left-text">
+                    <p>Blog</p>
+                    <p>About</p>
+                    <p>Shop</p>
+                    <p>Contact GitHub</p>
+                    <p>Pricing</p>
+                </div>
+                <div class="left-text">
+                    <P>API</P>
+                    <P>Training</P>
+                    <P>Status</P>
+                    <P>Security</P>
+                </div>
+                <div class="left-text">
+                    <p>Terms</p>
+                    <p>Privacy</p>
+                    <p>Docs</p>
+                </div>
             </div>
-            <div class="left-text">
-            <p>Terms</p>
-            <p>Privacy</p>
-            <p>Docs</p>
-            </div>
-        </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 
