@@ -186,14 +186,6 @@
         </p>
         <button>Click Here</button>
       </div>
-      <div class="movie">
-        <img src="src/img/16.jpg" alt="" width="250px" height="300px" />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus,
-          ut!
-        </p>
-        <button>Click Here</button>
-      </div>
     </div>
     <!-- FOOTER -->
     <footer>
@@ -225,7 +217,7 @@
       </div>
     </footer>
   </section>
-  
+
   <script src="script.js"></script>
 </body>
 
