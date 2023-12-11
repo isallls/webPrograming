@@ -170,7 +170,7 @@ if (isset($_GET["enter"])) {
         </script>
         <!-- end of condition if movie/series not found -->
     </section>
-                
+
     <!-- FOOTER -->
     <footer>
         <div class="footer">
@@ -196,6 +196,7 @@ if (isset($_GET["enter"])) {
                     <p>Terms</p>
                     <p>Privacy</p>
                     <p>Docs</p>
+                    <p><a href="tamu.php">buku tamu</a></p>
                 </div>
             </div>
         </div>
