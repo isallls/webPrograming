@@ -10,5 +10,5 @@
 
 - Aditya Dharma | 17220350
 - Faisal Sidauruk | 17220312
-- Dinu Kurniawan Cahyadi| 17220824
+- Dinu Kurniawan Cahyadi | 17220824
 - Iqbal Faiz Ramadhan | 17220931
