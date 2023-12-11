@@ -23,7 +23,7 @@ if (isset($_GET["enter"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOKKO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="itemshop.css">
+    <link rel="stylesheet" href="item_shop.css">
 
     <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
@@ -33,9 +33,10 @@ if (isset($_GET["enter"])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
     <style>
-        footer {
+        /* footer {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            margin-top: 25%;
         }
 
         .footer {
@@ -46,7 +47,7 @@ if (isset($_GET["enter"])) {
             margin: 0 10%;
             padding-bottom: 10px;
             gap: 5rem;
-            margin-top: 23%;
+            margin-top: 25px;
             background: url(backgroundmovies.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -79,7 +80,7 @@ if (isset($_GET["enter"])) {
             font-style: oblique;
             color: white;
             padding: 0 15px;
-        }
+        } */
     </style>
 </head>
 
@@ -169,7 +170,7 @@ if (isset($_GET["enter"])) {
         </script>
         <!-- end of condition if movie/series not found -->
     </section>
-
+                
     <!-- FOOTER -->
     <footer>
         <div class="footer">
