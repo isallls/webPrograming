@@ -92,7 +92,7 @@
     </div>
 
     <div class="about-img">
-      <img src="gacor.gif" />
+      <img src="bingchiling.jpeg" />
     </div>
   </section>
 
