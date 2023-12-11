@@ -46,7 +46,7 @@ if (isset($_GET["enter"])) {
             margin: 0 10%;
             padding-bottom: 10px;
             gap: 5rem;
-            margin-top: 25px;
+            margin-top: 23%;
             background: url(backgroundmovies.jpg);
             background-repeat: no-repeat;
             background-size: cover;
