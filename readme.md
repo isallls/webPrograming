@@ -5,16 +5,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/Bahrul-Rozak/url-to-code)](https://github.com/isallls/webPrograming/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/your-username/your-repo-name)](https://github.com/your-username/your-repo-name/network)
 
-## SIMPLE Website Film Using OMDb API
 
 ## Nama
 
-- Aditya Dharma |
-- Faisal Sidauruk |
-- Dinu Kurniawan Cahyadi|
-- Iqbal Faiz Ramadhan |
-
-## instalation
-
-1. API Key :
-   [OMDb API](https://www.omdbapi.com/)
+- Aditya Dharma | 17220350
+- Faisal Sidauruk | 17220312
+- Dinu Kurniawan Cahyadi| 17220824
+- Iqbal Faiz Ramadhan | 17220931
